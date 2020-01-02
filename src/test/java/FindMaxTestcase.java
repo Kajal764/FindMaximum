@@ -51,5 +51,26 @@ public class FindMaxTestcase {
         Assert.assertEquals(expected,X);
     }
 
-
+    //TestCases For String
+    @Test
+    public void whenGivenString_ShouldReturnThirdPositionMax() {
+        FindMaximum max = new FindMaximum();
+        String X= max.checkMaxString("kajal","nisha","sonam");
+        String expected="sonam";
+        Assert.assertEquals(expected,X);
+    }
+    @Test
+    public void whenGivenString_ShouldReturnSecondPositionMax() {
+        FindMaximum max = new FindMaximum();
+        String X= max.checkMaxString("Kajal","sonam","pranali");
+        String expected="sonam";
+        Assert.assertEquals(expected,X);
+    }
+    @Test
+    public void whenGivenString_ShouldReturnFirstPositionMax() {
+        FindMaximum max = new FindMaximum();
+        String X= max.checkMaxString("sonam","kajal","pranali");
+        String expected="sonam";
+        Assert.assertEquals(expected,X);
+    }
 }
