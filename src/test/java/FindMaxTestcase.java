@@ -7,7 +7,7 @@ public class FindMaxTestcase {
     @Test
     public void whenGivenNo_ShouldReturnThirdPositionMax() {
         FindMaximum max = new FindMaximum();
-        Integer X= max.checkMax(10,20,30);
+        Integer X= max.checkMaximum(10,20,30);
         Integer expected=30;
         Assert.assertEquals(expected,X);
     }
@@ -15,7 +15,7 @@ public class FindMaxTestcase {
     @Test
     public void whenGivenNo_ShouldReturnSecondPositionMax() {
         FindMaximum max = new FindMaximum();
-        Integer a= max.checkMax(10, 30, 20);
+        Integer a= max.checkMaximum(10, 30, 20);
         Integer expected=30;
         Assert.assertEquals(expected,a);
     }
@@ -23,7 +23,7 @@ public class FindMaxTestcase {
     @Test
     public void whenGivenNo_ShouldReturnFirstPositionMax() {
         FindMaximum max = new FindMaximum();
-        Integer a= max.checkMax(30, 10, 20);
+       Integer a= max.checkMaximum(30, 10, 20);
         Integer expected=30;
         Assert.assertEquals(expected,a);
     }
@@ -32,21 +32,21 @@ public class FindMaxTestcase {
     @Test
     public void whenGivenFloat_ShouldReturnThirdPositionMax() {
         FindMaximum max = new FindMaximum();
-        Float X= max.checkMaxFloat(10.3f,20.3f,30.3f);
+        Float X= max.checkMaximum(10.3f,20.3f,30.3f);
         Float expected=30.3f;
         Assert.assertEquals(expected,X);
     }
     @Test
     public void whenGivenFloat_ShouldReturnSecondPositionMax() {
         FindMaximum max = new FindMaximum();
-        Float X= max.checkMaxFloat(10.3f,30.3f,20.3f);
+        Float X= max.checkMaximum(10.3f,30.3f,20.3f);
         Float expected=30.3f;
         Assert.assertEquals(expected,X);
     }
     @Test
     public void whenGivenFloat_ShouldReturnFirstPositionMax() {
         FindMaximum max = new FindMaximum();
-        Float X= max.checkMaxFloat(40.3f,20.3f,30.3f);
+        Float X= max.checkMaximum(40.3f,20.3f,30.3f);
         Float expected=40.3f;
         Assert.assertEquals(expected,X);
     }
@@ -55,21 +55,21 @@ public class FindMaxTestcase {
     @Test
     public void whenGivenString_ShouldReturnThirdPositionMax() {
         FindMaximum max = new FindMaximum();
-        String X= max.checkMaxString("kajal","nisha","sonam");
+        String X= max.checkMaximum("kajal","nisha","sonam");
         String expected="sonam";
         Assert.assertEquals(expected,X);
     }
     @Test
     public void whenGivenString_ShouldReturnSecondPositionMax() {
         FindMaximum max = new FindMaximum();
-        String X= max.checkMaxString("Kajal","sonam","pranali");
+        String X= max.checkMaximum("Kajal","sonam","pranali");
         String expected="sonam";
         Assert.assertEquals(expected,X);
     }
     @Test
     public void whenGivenString_ShouldReturnFirstPositionMax() {
         FindMaximum max = new FindMaximum();
-        String X= max.checkMaxString("sonam","kajal","pranali");
+        String X= max.checkMaximum("sonam","kajal","pranali");
         String expected="sonam";
         Assert.assertEquals(expected,X);
     }
