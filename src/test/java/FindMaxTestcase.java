@@ -74,7 +74,7 @@ public class FindMaxTestcase {
         Assert.assertEquals(expected,X);
     }
 
-
+    //TestCases To Check generic mathod
     @Test
     public void whenGivenStringGeneric_ShouldReturnMax() {
         FindMaximum max = new FindMaximum("sonam","kajal","pranali");
@@ -91,11 +91,13 @@ public class FindMaxTestcase {
     }
     @Test
     public void whenGivenFloatGeneric_ShouldReturnMax() {
-        FindMaximum max = new FindMaximum(20.3f,30.3f,10.3f);
-        Object X= max.checkMaximumValue();
-        Float expected=30.3f;
-        Assert.assertEquals(expected,X);
+        FindMaximum max = new FindMaximum(20.3f, 30.3f, 10.3f);
+        Object X = max.checkMaximumValue();
+        Float expected = 30.3f;
+        Assert.assertEquals(expected, X);
     }
+
+        //Testcases To Check For For Than Three argument
     @Test
     public void whenGivenMoreThanThreeArgument_ShouldReturnMax() {
         FindMaximum max = new FindMaximum(20,30,10,50,60,70,99);
@@ -103,5 +105,4 @@ public class FindMaxTestcase {
         Integer expected=99;
         Assert.assertEquals(expected,X);
     }
-
 }
