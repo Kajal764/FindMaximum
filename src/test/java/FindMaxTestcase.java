@@ -96,4 +96,12 @@ public class FindMaxTestcase {
         Float expected=30.3f;
         Assert.assertEquals(expected,X);
     }
+    @Test
+    public void whenGivenMoreThanThreeArgument_ShouldReturnMax() {
+        FindMaximum max = new FindMaximum(20,30,10,50,60,70,99);
+        Object X= max.checkMaximumValue();
+        Integer expected=99;
+        Assert.assertEquals(expected,X);
+    }
+
 }

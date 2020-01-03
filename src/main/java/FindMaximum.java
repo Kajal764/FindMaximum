@@ -1,30 +1,26 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+
 public class FindMaximum<E extends Comparable> {
-    E first;
-    E second;
-    E third;
+    E[] array;
 
     public FindMaximum() {
-
     }
 
-    public FindMaximum(E first, E second, E third) {
-        this.first = first;
-        this.second = second;
-        this.third = third;
+    public FindMaximum(E... value) {
+        this.array = value;
     }
 
-    public <E extends Comparable> E checkMaximum(E first, E second, E third) {
-        E max=first;
-        if (second.compareTo(max) > 0)
-            max =second;
-        if (third.compareTo(max) > 0)
-            max =third;
-        System.out.println(max);
-        return max;
+    public <E extends Comparable> E checkMaximum(E... parameter) {
+        E values[]=parameter;
+        int arraylength = values.length;
+        Arrays.sort(values);
+        System.out.println(values[arraylength-1]);
+        return values[arraylength-1];
     }
 
     public Object checkMaximumValue() {
-        E e = checkMaximum(first, second, third);
+        E e = checkMaximum(array);
         return e;
     }
 
